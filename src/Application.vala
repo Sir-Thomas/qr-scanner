@@ -12,11 +12,11 @@ public class QrScannerApp : Gtk.Application {
     }
 
     protected override void activate () {
-        var label = new Gtk.Label ("Scan a QR code");
+        var label = new Gtk.Label (_("Scan a QR code"));
         var main_window = new Gtk.ApplicationWindow (this) {
             default_height = 600,
             default_width = 300,
-            title = "QR Scanner"
+            title = _("QR Scanner")
         };
         main_window.add (label);
         main_window.show_all ();
