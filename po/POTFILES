@@ -1,3 +1,3 @@
 src/Application.vala
 data/qr-scanner.desktop.in
-data/qr-scanner.appdata.xml
+data/qr-scanner.appdata.xml.in

@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.sirthomas.qr-scanner package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.sirthomas.qr-scanner\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-19 11:42-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/qr-scanner.desktop.in:3 data/qr-scanner.desktop.in:4
+#: data/qr-scanner.appdata.xml.in:6
+msgid "QR Scanner"
+msgstr ""
+
+#: data/qr-scanner.desktop.in:5 data/qr-scanner.appdata.xml.in:9
+msgid "Scan a QR code from the camera or an image file"
+msgstr ""
+
+#: data/qr-scanner.desktop.in:10
+msgid "QR;Scanner;"
+msgstr ""
+
+#: data/qr-scanner.appdata.xml.in:7
+msgid "Scan any QR code"
+msgstr ""
