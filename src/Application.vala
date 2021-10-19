@@ -12,13 +12,7 @@ public class QrScannerApp : Gtk.Application {
     }
 
     protected override void activate () {
-        var main_window = new Gtk.ApplicationWindow (this) {
-            default_height = 600,
-            default_width = 300,
-            title = _("QR Scanner")
-        };
-        main_window.add (new QrGrid.QrGrid());
-        main_window.show_all ();
+        add_window (new QrReader.Window (this));
     }
 
     public static int main (string[] args) {

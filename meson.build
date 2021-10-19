@@ -7,6 +7,7 @@ executable(
     meson.project_name(),
     'src' / 'Application.vala',
     'src' / 'QrGrid.vala',
+    'src' / 'Window.vala',
     dependencies: [
         dependency('gtk+-3.0')
     ],
