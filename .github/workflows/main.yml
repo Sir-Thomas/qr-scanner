@@ -14,7 +14,7 @@ jobs:
       with:
         bundle: QrScannerApp.flatpak
         manifest-path: com.github.sirthomas.qr-scanner.yml
-        run-test: false
+        run-tests: false
         repository-name: appcenter
         repository-url: https://flatpak.elementary.io/repo.flatpakrepo
         cache-key: "flatpak-builder${{ github.sha }}"
