@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=QR Scanner
+GenericName=QR Scanner
+Comment=Scan a QR code from the camera or an image file
+Categories=Utility;
+Exec=com.github.sirthomas.qr-scanner
+Icon=com.github.sirthomas.qr-scanner
+Terminal=false
+Type=Application
+Keywords=QR;Scanner;
