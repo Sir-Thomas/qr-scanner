@@ -1,3 +1,4 @@
 src/Application.vala
+src/QrGrid.vala
 data/qr-scanner.desktop.in
 data/qr-scanner.appdata.xml.in
