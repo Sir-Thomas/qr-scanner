@@ -3,17 +3,6 @@ project('com.github.sirthomas.qr-scanner', 'vala', 'c')
 i18n = import('i18n')
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
-executable(
-    meson.project_name(),
-    'src' / 'Application.vala',
-    'src' / 'QrGrid.vala',
-    'src' / 'Window.vala',
-    dependencies: [
-        dependency('gtk+-3.0')
-    ],
-    install: true
-)
-
 i18n.merge_file(
     input: 'data' / 'qr-scanner.desktop.in',
     output: meson.project_name() + '.desktop',
@@ -31,7 +20,9 @@ i18n.merge_file(
     install_dir: get_option('datadir') / 'metainfo'
 )
 
+subdir('src')
 subdir('po')
+subdir('data')
 
 icon_sizes = ['16', '24', '32', '48', '64', '128']
 
@@ -47,3 +38,5 @@ foreach i : icon_sizes
         rename: meson.project_name() + '.svg'
     )
 endforeach
+
+meson.add_install_script('meson/post_install.py')

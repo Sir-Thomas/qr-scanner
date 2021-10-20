@@ -6,9 +6,13 @@ public class QrReader.Window : Gtk.ApplicationWindow {
     }
 
     construct {
+        title = _("QR Scanner");
         default_height = 600;
         default_width = 300;
-        title = _("QR Scanner");
+
+        var settings = new GLib.Settings ("com.github.sirthomas.qr-reader");
+        move (settings.get_int ("x-pos"), settings.get_int ("y-pos"));
+
         add (new QrReader.QrGrid());
         show_all ();
     }
