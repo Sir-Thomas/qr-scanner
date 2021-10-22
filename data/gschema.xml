@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-    <schema path="/com/github/sirthomas/qr-reader" id="com.github.sirthomas.qr-reader">
+    <schema path="/com/github/sirthomas/qr-reader" id="com.github.sirthomas.qr-reader" gettext-domain="qr-reader">
         <key name="x-pos" type="i">
             <default>360</default>
             <summary>Horizontal Position</summary>
