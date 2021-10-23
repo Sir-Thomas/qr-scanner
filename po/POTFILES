@@ -1,5 +1,6 @@
 src/Application.vala
 src/Widgets/Window.vala
 src/Widgets/QrGrid.vala
+src/Widgets/HeaderBar.vala
 data/qr-scanner.desktop.in
 data/qr-scanner.appdata.xml.in
