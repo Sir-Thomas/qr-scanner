@@ -12,7 +12,7 @@ public class QrScannerApp : Gtk.Application {
     }
 
     protected override void activate () {
-        add_window (new QrReader.Window (this));
+        add_window (new QrScanner.Window (this));
     }
 
     public static int main (string[] args) {

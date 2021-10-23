@@ -1,4 +1,4 @@
-public class QrReader.QrGrid : Gtk.Grid {
+public class QrScanner.QrGrid : Gtk.Grid {
     public QrGrid () {
         this.row_spacing = 6;
         this.column_spacing = 6;
