@@ -6,7 +6,9 @@ QR code scanner built as an adaptive app for desktop and mobile linux.
 
 ### Flatpak
 
-`flatpak-builder build com.github.sirthomas.qr-scanner.yml --user --install --force-clean`
+```
+flatpak-builder build com.github.sirthomas.qr-scanner.yml --user --install --force-clean
+```
 
 ### Meson
 
