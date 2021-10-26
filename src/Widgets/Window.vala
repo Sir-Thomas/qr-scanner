@@ -1,17 +1,12 @@
 public class QrScanner.Window : Gtk.ApplicationWindow {
     public GLib.Settings settings;
+    public Gtk.Stack stack { get; set; }
 
     public Window (Gtk.Application app) {
-        Object (
-            application: app
-        );
+        Object (application: app);
     }
 
     construct {
-        title = _("QR Scanner");
-        default_height = 600;
-        default_width = 300;
-
         settings = new GLib.Settings ("com.github.sirthomas.qr-reader");
         move (settings.get_int ("x-pos"), settings.get_int ("y-pos"));
         resize (settings.get_int ("window-width"), settings.get_int ("window-height"));
@@ -20,10 +15,20 @@ public class QrScanner.Window : Gtk.ApplicationWindow {
             return before_destroy ();
         });
 
-        var headerbar = new QrScanner.HeaderBar ();
+        stack = new Gtk.Stack ();
+        stack.expand = true;
+        var outstanding = new Gtk.Grid ();
+        outstanding.add (new Gtk.Label ("Outstanding Page"));
+        var completed = new Gtk.Grid ();
+        completed.add (new QrScanner.QrGrid ());
+
+        stack.add_titled (outstanding, "outstanding", "Outstanding");
+        stack.add_titled (completed, "completed", "Completed");
+
+        var headerbar = new QrScanner.HeaderBar (this);
         set_titlebar (headerbar);
 
-        add (new QrScanner.QrGrid());
+        add (stack);
         show_all ();
     }
 
