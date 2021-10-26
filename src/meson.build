@@ -5,11 +5,10 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 executable(
     meson.project_name(),
     'Application.vala',
-    'Widgets' / 'QrGrid.vala',
+    'Widgets' / 'Box.vala',
     'Widgets' / 'Window.vala',
-    'Widgets' / 'HeaderBar.vala',
     dependencies: [
-        dependency('gtk+-3.0')
+        dependency('gtk4')
     ],
     install: true
 )
